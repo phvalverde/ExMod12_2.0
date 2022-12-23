@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class FiltroStream {
@@ -12,6 +13,8 @@ public class FiltroStream {
         pessoaList.add(new Pessoa("Gabriel", Genero.Masculino, 16, "Não"));
         pessoaList.add(new Pessoa("Bia", Genero.Feminino, 22,"Não"));
         pessoaList.add(new Pessoa("Ana", Genero.Feminino, 17, "Não"));
+
+        Collections.sort(pessoaList);
 
         System.out.println(" ");
         System.out.println("------| Todas as pessoas |------");

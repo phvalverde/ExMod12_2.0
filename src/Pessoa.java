@@ -1,7 +1,7 @@
 enum Genero {
     Masculino, Feminino
 }
-public class Pessoa {
+public class Pessoa implements Comparable<Pessoa> {
     private String nome;
     private Genero genero;
     private int idade;
@@ -54,5 +54,9 @@ public class Pessoa {
 
     public void setAluno(String aluno) {
         this.aluno = aluno;
+    }
+
+    public int compareTo(Pessoa pessoa) {
+        return this.nome.compareTo(pessoa.getNome());
     }
 }
